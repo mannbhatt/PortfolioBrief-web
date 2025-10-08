@@ -5,7 +5,11 @@ const app = express();
 process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
-
+app.use(cors({
+  origin: "https://portfoliobrif-frontend.vercel.app", // your frontend URL
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
+  credentials: true
+}));
 const { stockSaveToDB, updateStocks, savePreference, fetchedNews, adduser } = require('./stockdb');
 const { userNews } = require('./sendResNews');
 
