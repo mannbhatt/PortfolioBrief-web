@@ -124,3 +124,8 @@ app.post('/api/fetchnews', async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 });
+
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
