@@ -23,7 +23,7 @@ export default function Home() {
         const status = await signIn('email', {
             redirect: false,
             email: values.email,
-            callbackUrl: "/"
+            callbackUrl: "https://portfoliobrif-frontend.vercel.app/dashboard"
         })
 
         if (status.ok) { 
