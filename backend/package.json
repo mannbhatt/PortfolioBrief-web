@@ -17,6 +17,7 @@
     "mongodb": "^5.7.0",
     "mongoose": "^7.4.3",
     "node-cron": "^3.0.2",
-    "nodemailer": "^6.9.4"
+    "nodemailer": "^6.9.4",
+    "serverless-http": "^4.0.0"
   }
 }
