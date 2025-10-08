@@ -31,7 +31,7 @@ export default function Home() {
 
     async function handleGoogleSignup() {
         console.log('Register Google Click');
-        signIn('google',{callbackUrl: `${NEXT_PUBLIC_API_URL}/dashboard`})
+        signIn('google', {callbackUrl:"https://portfoliobrif-frontend.vercel.app/dashboard"})
     }
 
     return (
